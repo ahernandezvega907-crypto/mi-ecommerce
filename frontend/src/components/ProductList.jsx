@@ -6,7 +6,7 @@ export default function ProductList() {
   const { addToCart } = useCart();
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/products')
+    fetch('https://mi-ecommerce-apibackend.onrender.com/products')
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.error("Error cargando productos:", err));

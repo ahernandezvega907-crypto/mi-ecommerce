@@ -12,7 +12,7 @@ export default function Cart() {
     };
 
     try {
-      const res = await fetch('http://127.0.0.1:8000/checkout', {
+      const res = await fetch('https://mi-ecommerce-apibackend.onrender.com/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
